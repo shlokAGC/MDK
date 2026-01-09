@@ -1,0 +1,104 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": false
+					},
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/My_App/Services/com_sap_edm_sampleservice_v4.service",
+						"QueryOptions": ""
+					},
+					"_Name": "SectionObjectTable0",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record found!",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{Name}",
+						"Subhead": "{Category}",
+						"Footnote": "{CurrencyCode}",
+						"Description": "{CategoryName}",
+						"StatusText": "{DimensionDepth}",
+						"SubstatusText": "{DimensionHeight}",
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "DisclosureIndicator",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/My_App/Services/com_sap_edm_sampleservice_v4.service/{@odata.readLink}/Picture"
+								}
+							],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						"OnPress": "/My_App/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Loading more items, please wait..."
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"HighlightSelectedItem": false
+				}
+			],
+			"LoadingIndicator": {
+				"Enabled": true,
+				"Text": "Loading, please wait..."
+			},
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_List",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "$(L,Products)"
+	}
+}

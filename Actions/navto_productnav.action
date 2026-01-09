@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "navto_productnav"
+	},
+	"PageToOpen": "/My_App/Pages/Productnav.page",
+	"NavigationType": "Inner"
+}

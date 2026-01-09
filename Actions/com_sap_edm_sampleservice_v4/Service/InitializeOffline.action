@@ -1,0 +1,39 @@
+{
+    "Service": "/My_App/Services/com_sap_edm_sampleservice_v4.service",
+    "DefiningRequests": [{
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Suppliers",
+            "Query": "Suppliers"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/My_App/Actions/com_sap_edm_sampleservice_v4/Service/InitializeOfflineFailureMessage.action"
+}

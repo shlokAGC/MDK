@@ -1,0 +1,94 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"Target": {
+						"Service": "/My_App/Services/com_sap_edm_sampleservice_v4.service",
+						"EntitySet": "Products"
+					},
+					"_Name": "SectionObjectTable1",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No record ",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"Title": "{Name}",
+						"Subhead": "{Category}",
+						"Footnote": "{CurrencyCode}",
+						"Description": "{CategoryName}",
+						"StatusText": "{DimensionDepth}",
+						"SubstatusText": "{DimensionHeight}",
+						"PreserveIconStackSpacing": true,
+						"AccessoryType": "None",
+						"ProgressIndicator": "InProgress",
+						"Tags": [],
+						"AvatarStack": {
+							"Avatars": [],
+							"ImageIsCircular": false,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"Avatars": [],
+							"ImageIsCircular": true
+						},
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Search Product",
+						"BarcodeScanner": true,
+						"Delay": 500
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "Please wait....",
+						"PageSize": 50
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Productnav",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar2",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

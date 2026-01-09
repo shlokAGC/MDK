@@ -1,0 +1,23 @@
+{
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": ""
+	},
+	"CF": {
+		"Target": "https://api.cf.eu10-004.hana.ondemand.com",
+		"Organization": "edf4c792-5ff5-43ec-b4fd-9ac874478fb1",
+		"Space": "55280115-0edb-41de-bfaf-1e36a861e98a"
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/edf4c792-5ff5-43ec-b4fd-9ac874478fb1/space/55280115-0edb-41de-bfaf-1e36a861e98a",
+		"AppId": "MDK_Leaning_SG",
+		"Destination": []
+	},
+	"Build": {
+		"SourceMap": false,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/My_App/Services/com_sap_edm_sampleservice_v4.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/My_App/Actions/com_sap_edm_sampleservice_v4/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/My_App/Actions/com_sap_edm_sampleservice_v4/Service/CloseOfflineFailureMessage.action"
+}
