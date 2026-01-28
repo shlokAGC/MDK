@@ -57,7 +57,9 @@ let my_app_actions_com_sap_edm_sampleservice_v4_service_syncstartedmessage_actio
 let my_app_actions_com_sap_edm_sampleservice_v4_service_uploadoffline_action = __webpack_require__(/*! ./My_App/Actions/com_sap_edm_sampleservice_v4/Service/UploadOffline.action */ "./build.definitions/My_App/Actions/com_sap_edm_sampleservice_v4/Service/UploadOffline.action")
 let my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_detail_action = __webpack_require__(/*! ./My_App/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_Detail.action */ "./build.definitions/My_App/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_Detail.action")
 let my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_list_action = __webpack_require__(/*! ./My_App/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_List.action */ "./build.definitions/My_App/Actions/com_sap_edm_sampleservice_v4/Suppliers/NavToSuppliers_List.action")
+let my_app_actions_createcustomerentityfailuremessage_action = __webpack_require__(/*! ./My_App/Actions/CreateCustomerEntityFailureMessage.action */ "./build.definitions/My_App/Actions/CreateCustomerEntityFailureMessage.action")
 let my_app_actions_customer_updateentity_action = __webpack_require__(/*! ./My_App/Actions/Customer_UpdateEntity.action */ "./build.definitions/My_App/Actions/Customer_UpdateEntity.action")
+let my_app_actions_customers_createentity_action = __webpack_require__(/*! ./My_App/Actions/Customers_CreateEntity.action */ "./build.definitions/My_App/Actions/Customers_CreateEntity.action")
 let my_app_actions_errorarchive_errorarchive_syncfailure_action = __webpack_require__(/*! ./My_App/Actions/ErrorArchive/ErrorArchive_SyncFailure.action */ "./build.definitions/My_App/Actions/ErrorArchive/ErrorArchive_SyncFailure.action")
 let my_app_actions_errorarchive_navtoerrorarchive_detail_action = __webpack_require__(/*! ./My_App/Actions/ErrorArchive/NavToErrorArchive_Detail.action */ "./build.definitions/My_App/Actions/ErrorArchive/NavToErrorArchive_Detail.action")
 let my_app_actions_errorarchive_navtoerrorarchive_list_action = __webpack_require__(/*! ./My_App/Actions/ErrorArchive/NavToErrorArchive_List.action */ "./build.definitions/My_App/Actions/ErrorArchive/NavToErrorArchive_List.action")
@@ -73,6 +75,7 @@ let my_app_actions_navto_productnav_action = __webpack_require__(/*! ./My_App/Ac
 let my_app_actions_navtocustomer_details_action = __webpack_require__(/*! ./My_App/Actions/navToCustomer_Details.action */ "./build.definitions/My_App/Actions/navToCustomer_Details.action")
 let my_app_actions_navtocustomer_edit_action = __webpack_require__(/*! ./My_App/Actions/navToCustomer_Edit.action */ "./build.definitions/My_App/Actions/navToCustomer_Edit.action")
 let my_app_actions_navtocustomer_list_action = __webpack_require__(/*! ./My_App/Actions/NavToCustomer_List.action */ "./build.definitions/My_App/Actions/NavToCustomer_List.action")
+let my_app_actions_navtocustomers_create_action = __webpack_require__(/*! ./My_App/Actions/NavToCustomers_Create.action */ "./build.definitions/My_App/Actions/NavToCustomers_Create.action")
 let my_app_actions_updatecustomerentityfailmessage_action = __webpack_require__(/*! ./My_App/Actions/UpdateCustomerEntityFailMessage.action */ "./build.definitions/My_App/Actions/UpdateCustomerEntityFailMessage.action")
 let my_app_globals_application_appdefinition_version_global = __webpack_require__(/*! ./My_App/Globals/Application/AppDefinition_Version.global */ "./build.definitions/My_App/Globals/Application/AppDefinition_Version.global")
 let my_app_globals_application_applicationname_global = __webpack_require__(/*! ./My_App/Globals/Application/ApplicationName.global */ "./build.definitions/My_App/Globals/Application/ApplicationName.global")
@@ -97,6 +100,7 @@ let my_app_pages_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_de
 let my_app_pages_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_list_page = __webpack_require__(/*! ./My_App/Pages/com_sap_edm_sampleservice_v4_SalesOrderItems/SalesOrderItems_List.page */ "./build.definitions/My_App/Pages/com_sap_edm_sampleservice_v4_SalesOrderItems/SalesOrderItems_List.page")
 let my_app_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_detail_page = __webpack_require__(/*! ./My_App/Pages/com_sap_edm_sampleservice_v4_Suppliers/Suppliers_Detail.page */ "./build.definitions/My_App/Pages/com_sap_edm_sampleservice_v4_Suppliers/Suppliers_Detail.page")
 let my_app_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_list_page = __webpack_require__(/*! ./My_App/Pages/com_sap_edm_sampleservice_v4_Suppliers/Suppliers_List.page */ "./build.definitions/My_App/Pages/com_sap_edm_sampleservice_v4_Suppliers/Suppliers_List.page")
+let my_app_pages_customer_create_page = __webpack_require__(/*! ./My_App/Pages/Customer_Create.page */ "./build.definitions/My_App/Pages/Customer_Create.page")
 let my_app_pages_customer_edit_page = __webpack_require__(/*! ./My_App/Pages/Customer_Edit.page */ "./build.definitions/My_App/Pages/Customer_Edit.page")
 let my_app_pages_customerlist_page = __webpack_require__(/*! ./My_App/Pages/CustomerList.page */ "./build.definitions/My_App/Pages/CustomerList.page")
 let my_app_pages_customers_detail_page = __webpack_require__(/*! ./My_App/Pages/Customers_detail.page */ "./build.definitions/My_App/Pages/Customers_detail.page")
@@ -169,7 +173,9 @@ module.exports = {
 	my_app_actions_com_sap_edm_sampleservice_v4_service_uploadoffline_action : my_app_actions_com_sap_edm_sampleservice_v4_service_uploadoffline_action,
 	my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_detail_action : my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_detail_action,
 	my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_list_action : my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_list_action,
+	my_app_actions_createcustomerentityfailuremessage_action : my_app_actions_createcustomerentityfailuremessage_action,
 	my_app_actions_customer_updateentity_action : my_app_actions_customer_updateentity_action,
+	my_app_actions_customers_createentity_action : my_app_actions_customers_createentity_action,
 	my_app_actions_errorarchive_errorarchive_syncfailure_action : my_app_actions_errorarchive_errorarchive_syncfailure_action,
 	my_app_actions_errorarchive_navtoerrorarchive_detail_action : my_app_actions_errorarchive_navtoerrorarchive_detail_action,
 	my_app_actions_errorarchive_navtoerrorarchive_list_action : my_app_actions_errorarchive_navtoerrorarchive_list_action,
@@ -185,6 +191,7 @@ module.exports = {
 	my_app_actions_navtocustomer_details_action : my_app_actions_navtocustomer_details_action,
 	my_app_actions_navtocustomer_edit_action : my_app_actions_navtocustomer_edit_action,
 	my_app_actions_navtocustomer_list_action : my_app_actions_navtocustomer_list_action,
+	my_app_actions_navtocustomers_create_action : my_app_actions_navtocustomers_create_action,
 	my_app_actions_updatecustomerentityfailmessage_action : my_app_actions_updatecustomerentityfailmessage_action,
 	my_app_globals_application_appdefinition_version_global : my_app_globals_application_appdefinition_version_global,
 	my_app_globals_application_applicationname_global : my_app_globals_application_applicationname_global,
@@ -209,6 +216,7 @@ module.exports = {
 	my_app_pages_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_list_page : my_app_pages_com_sap_edm_sampleservice_v4_salesorderitems_salesorderitems_list_page,
 	my_app_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_detail_page : my_app_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_detail_page,
 	my_app_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_list_page : my_app_pages_com_sap_edm_sampleservice_v4_suppliers_suppliers_list_page,
+	my_app_pages_customer_create_page : my_app_pages_customer_create_page,
 	my_app_pages_customer_edit_page : my_app_pages_customer_edit_page,
 	my_app_pages_customerlist_page : my_app_pages_customerlist_page,
 	my_app_pages_customers_detail_page : my_app_pages_customers_detail_page,
@@ -1092,7 +1100,17 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \**********************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","Target":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCell":{"Visible":true,"DetailImage":"","Headline":"{FirstName}","Subheadline":"{LastName}","Description":"{City}","OnPress":"/My_App/Actions/navToCustomer_Details.action","ActivityItems":[{"_Name":"SectionContactCell0ActivityItems0","ActivityType":"Phone","ActivityValue":"{PhoneNumber}"},{"_Name":"SectionContactCell0ActivityItems1","ActivityType":"Email","ActivityValue":"{EmailAddress}"}],"ContextMenu":{"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Search":{"Enabled":true,"BarcodeScanner":true}}]}],"_Type":"Page","_Name":"CustomerList","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Create","SystemItem":"Add","Position":"Right","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Customer","PrefersLargeCaption":true}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ContactCell","Target":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Name":"SectionContactCell0","Visible":true,"EmptySection":{"FooterVisible":false},"ContactCell":{"Visible":true,"DetailImage":"","Headline":"{FirstName}","Subheadline":"{LastName}","Description":"{City}","OnPress":"/My_App/Actions/navToCustomer_Details.action","ActivityItems":[{"_Name":"SectionContactCell0ActivityItems0","ActivityType":"Phone","ActivityValue":"{PhoneNumber}"},{"_Name":"SectionContactCell0ActivityItems1","ActivityType":"Email","ActivityValue":"{EmailAddress}"}],"ContextMenu":{"PerformFirstActionWithFullSwipe":true}},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"Search":{"Enabled":true,"BarcodeScanner":true}}]}],"_Type":"Page","_Name":"CustomerList","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Add","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/My_App/Actions/NavToCustomers_Create.action"}],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar","Caption":"Customer","PrefersLargeCaption":true}}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Pages/Customer_Create.page":
+/*!*************************************************************!*\
+  !*** ./build.definitions/My_App/Pages/Customer_Create.page ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCFirstName","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"First Name","PlaceHolder":"Enter First Name","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCLastName","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Last Name","PlaceHolder":"Enter Last Name","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCPhone","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Phone","PlaceHolder":"Enter Phone","KeyboardType":"Phone","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCEmail","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Email","PlaceHolder":"Enter Email","KeyboardType":"Email","Enabled":true,"IsEditable":true},{"Value":"1111/01/01","_Type":"Control.Type.FormCell.DatePicker","_Name":"FCCDOB","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Select Date of Birth","IsEditable":true,"Mode":"Date"}],"Layout":{"NumberOfColumns":1},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"Customer_Create","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/My_App/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Save","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/My_App/Actions/Customers_CreateEntity.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Add New Customer"}}
 
 /***/ }),
 
@@ -1456,6 +1474,16 @@ module.exports = {"_Type":"Action.Type.ClosePage"}
 
 /***/ }),
 
+/***/ "./build.definitions/My_App/Actions/CreateCustomerEntityFailureMessage.action":
+/*!************************************************************************************!*\
+  !*** ./build.definitions/My_App/Actions/CreateCustomerEntityFailureMessage.action ***!
+  \************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"CreateCustomerEntityFailureMessage"},"Message":"Failed to Create Customer record - {#ActionResults:Customers_CreateEntity/error}","Title":"Create Customer","OKCaption":"OK"}
+
+/***/ }),
+
 /***/ "./build.definitions/My_App/Actions/Customer_UpdateEntity.action":
 /*!***********************************************************************!*\
   !*** ./build.definitions/My_App/Actions/Customer_UpdateEntity.action ***!
@@ -1463,6 +1491,16 @@ module.exports = {"_Type":"Action.Type.ClosePage"}
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult":{"_Name":"Customer_UpdateEntity"},"OnFailure":"/My_App/Actions/UpdateCustomerEntityFailMessage.action","OnSuccess":"/My_App/Actions/CloseModalPage_Complete.action","Target":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"},"Properties":{"EmailAddress":"#Control:FCEmail/#Value","FirstName":"#Control:FCFirstName/#Value","LastName":"#Control:FCLastName/#Value","PhoneNumber":"#Control:FCPhone/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Actions/Customers_CreateEntity.action":
+/*!************************************************************************!*\
+  !*** ./build.definitions/My_App/Actions/Customers_CreateEntity.action ***!
+  \************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Customers_CreateEntity"},"OnFailure":"/My_App/Actions/CreateCustomerEntityFailureMessage.action","OnSuccess":"/My_App/Actions/CloseModalPage_Complete.action","Target":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"Properties":{"DateOfBirth":"#Control:FCCDOB/#Value","EmailAddress":"#Control:FCCEmail/#Value","FirstName":"#Control:FCCFirstName/#Value","LastName":"#Control:FCCLastName/#Value","PhoneNumber":"#Control:FCCPhone/#Value"}}
 
 /***/ }),
 
@@ -1583,6 +1621,16 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToCustomer_List"},"PageToOpen":"/My_App/Pages/CustomerList.page"}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Actions/NavToCustomers_Create.action":
+/*!***********************************************************************!*\
+  !*** ./build.definitions/My_App/Actions/NavToCustomers_Create.action ***!
+  \***********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"NavToCustomers_Create"},"PageToOpen":"/My_App/Pages/Customer_Create.page","ModalPage":true}
 
 /***/ }),
 

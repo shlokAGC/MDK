@@ -68,11 +68,12 @@
 			{
 				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "ActionBarItem0",
-				"Caption": "Create",
+				"Caption": "Item",
 				"SystemItem": "Add",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true
+				"Visible": true,
+				"OnPress": "/My_App/Actions/NavToCustomers_Create.action"
 			}
 		],
 		"_Name": "ActionBar1",
