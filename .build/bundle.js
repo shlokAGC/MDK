@@ -60,6 +60,9 @@ let my_app_actions_com_sap_edm_sampleservice_v4_suppliers_navtosuppliers_list_ac
 let my_app_actions_createcustomerentityfailuremessage_action = __webpack_require__(/*! ./My_App/Actions/CreateCustomerEntityFailureMessage.action */ "./build.definitions/My_App/Actions/CreateCustomerEntityFailureMessage.action")
 let my_app_actions_customer_updateentity_action = __webpack_require__(/*! ./My_App/Actions/Customer_UpdateEntity.action */ "./build.definitions/My_App/Actions/Customer_UpdateEntity.action")
 let my_app_actions_customers_createentity_action = __webpack_require__(/*! ./My_App/Actions/Customers_CreateEntity.action */ "./build.definitions/My_App/Actions/Customers_CreateEntity.action")
+let my_app_actions_customers_deleteconfirmation_action = __webpack_require__(/*! ./My_App/Actions/Customers_DeleteConfirmation.action */ "./build.definitions/My_App/Actions/Customers_DeleteConfirmation.action")
+let my_app_actions_customers_deleteentity_action = __webpack_require__(/*! ./My_App/Actions/Customers_DeleteEntity.action */ "./build.definitions/My_App/Actions/Customers_DeleteEntity.action")
+let my_app_actions_deletecustomerentityfailuremessage_action = __webpack_require__(/*! ./My_App/Actions/DeleteCustomerEntityFailureMessage.action */ "./build.definitions/My_App/Actions/DeleteCustomerEntityFailureMessage.action")
 let my_app_actions_errorarchive_errorarchive_syncfailure_action = __webpack_require__(/*! ./My_App/Actions/ErrorArchive/ErrorArchive_SyncFailure.action */ "./build.definitions/My_App/Actions/ErrorArchive/ErrorArchive_SyncFailure.action")
 let my_app_actions_errorarchive_navtoerrorarchive_detail_action = __webpack_require__(/*! ./My_App/Actions/ErrorArchive/NavToErrorArchive_Detail.action */ "./build.definitions/My_App/Actions/ErrorArchive/NavToErrorArchive_Detail.action")
 let my_app_actions_errorarchive_navtoerrorarchive_list_action = __webpack_require__(/*! ./My_App/Actions/ErrorArchive/NavToErrorArchive_List.action */ "./build.definitions/My_App/Actions/ErrorArchive/NavToErrorArchive_List.action")
@@ -116,6 +119,7 @@ let my_app_rules_application_getclientversion_js = __webpack_require__(/*! ./My_
 let my_app_rules_application_onwillupdate_js = __webpack_require__(/*! ./My_App/Rules/Application/OnWillUpdate.js */ "./build.definitions/My_App/Rules/Application/OnWillUpdate.js")
 let my_app_rules_application_resetappsettingsandlogout_js = __webpack_require__(/*! ./My_App/Rules/Application/ResetAppSettingsAndLogout.js */ "./build.definitions/My_App/Rules/Application/ResetAppSettingsAndLogout.js")
 let my_app_rules_com_sap_edm_sampleservice_v4_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./My_App/Rules/com_sap_edm_sampleservice_v4/ErrorArchive_CheckForSyncError.js */ "./build.definitions/My_App/Rules/com_sap_edm_sampleservice_v4/ErrorArchive_CheckForSyncError.js")
+let my_app_rules_customers_deleteconfirmation_js = __webpack_require__(/*! ./My_App/Rules/Customers_DeleteConfirmation.js */ "./build.definitions/My_App/Rules/Customers_DeleteConfirmation.js")
 let my_app_rules_logging_loglevels_js = __webpack_require__(/*! ./My_App/Rules/Logging/LogLevels.js */ "./build.definitions/My_App/Rules/Logging/LogLevels.js")
 let my_app_rules_logging_settracecategories_js = __webpack_require__(/*! ./My_App/Rules/Logging/SetTraceCategories.js */ "./build.definitions/My_App/Rules/Logging/SetTraceCategories.js")
 let my_app_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./My_App/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/My_App/Rules/Logging/SetUserLogLevel.js")
@@ -176,6 +180,9 @@ module.exports = {
 	my_app_actions_createcustomerentityfailuremessage_action : my_app_actions_createcustomerentityfailuremessage_action,
 	my_app_actions_customer_updateentity_action : my_app_actions_customer_updateentity_action,
 	my_app_actions_customers_createentity_action : my_app_actions_customers_createentity_action,
+	my_app_actions_customers_deleteconfirmation_action : my_app_actions_customers_deleteconfirmation_action,
+	my_app_actions_customers_deleteentity_action : my_app_actions_customers_deleteentity_action,
+	my_app_actions_deletecustomerentityfailuremessage_action : my_app_actions_deletecustomerentityfailuremessage_action,
 	my_app_actions_errorarchive_errorarchive_syncfailure_action : my_app_actions_errorarchive_errorarchive_syncfailure_action,
 	my_app_actions_errorarchive_navtoerrorarchive_detail_action : my_app_actions_errorarchive_navtoerrorarchive_detail_action,
 	my_app_actions_errorarchive_navtoerrorarchive_list_action : my_app_actions_errorarchive_navtoerrorarchive_list_action,
@@ -232,6 +239,7 @@ module.exports = {
 	my_app_rules_application_onwillupdate_js : my_app_rules_application_onwillupdate_js,
 	my_app_rules_application_resetappsettingsandlogout_js : my_app_rules_application_resetappsettingsandlogout_js,
 	my_app_rules_com_sap_edm_sampleservice_v4_errorarchive_checkforsyncerror_js : my_app_rules_com_sap_edm_sampleservice_v4_errorarchive_checkforsyncerror_js,
+	my_app_rules_customers_deleteconfirmation_js : my_app_rules_customers_deleteconfirmation_js,
 	my_app_rules_logging_loglevels_js : my_app_rules_logging_loglevels_js,
 	my_app_rules_logging_settracecategories_js : my_app_rules_logging_settracecategories_js,
 	my_app_rules_logging_setuserloglevel_js : my_app_rules_logging_setuserloglevel_js,
@@ -504,6 +512,33 @@ function ResetAppSettingsAndLogout(clientAPI) {
     // Logout 
     return clientAPI.getPageProxy().executeAction('/My_App/Actions/Application/Reset.action');
   }
+}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Rules/Customers_DeleteConfirmation.js":
+/*!************************************************************************!*\
+  !*** ./build.definitions/My_App/Rules/Customers_DeleteConfirmation.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Customers_DeleteConfirmation)
+/* harmony export */ });
+/**
+* Describe this function...
+* @param {IClientAPI} context
+*/
+function Customers_DeleteConfirmation(context) {
+  return context.executeAction('/My_App/Actions/Customers_DeleteConfirmation.action').then(result => {
+    if (result.data) {
+      return context.executeAction('/My_App/Actions/Customers_DeleteEntity.action').then(success => Promise.resolve(success), failure => Promise.reject('Delete entity failed ' + failure));
+    } else {
+      return Promise.reject('User Deferred');
+    }
+  });
 }
 
 /***/ }),
@@ -1130,7 +1165,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \**************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","ObjectHeader":{"Subhead":"{LastName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{FirstName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"Visible":true},{"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"PostalCode","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"Layout":{"NumberOfColumns":2}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Customers_detail","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/My_App/Actions/navToCustomer_Edit.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Details"},"DesignTimeTarget":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"ObjectHeader":{"Subhead":"{LastName}","Footnote":"{EmailAddress}","Description":"{CustomerID}","StatusText":"{PhoneNumber}","DetailImage":"sap-icon://customer","DetailImageIsCircular":false,"BodyText":"{DateOfBirth}","HeadlineText":"{FirstName}","StatusPosition":"Stacked","StatusImagePosition":"Leading","SubstatusImagePosition":"Leading"},"_Type":"Section.Type.ObjectHeader","_Name":"SectionObjectHeader0","Visible":true},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{HouseNumber} {Street} ","_Type":"KeyValue.Type.Item","_Name":"KeyValue1","KeyName":"Address","Visible":true},{"Value":"{City}","_Type":"KeyValue.Type.Item","_Name":"KeyValue0","KeyName":"City","Visible":true},{"Value":"{PostalCode}","_Type":"KeyValue.Type.Item","_Name":"KeyValue2","KeyName":"PostalCode","Visible":true},{"Value":"{Country}","_Type":"KeyValue.Type.Item","_Name":"KeyValue3","KeyName":"Country","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}}]}],"DesignTimeTarget":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"_Type":"Page","_Name":"Customers_detail","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Edit","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/My_App/Actions/navToCustomer_Edit.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/My_App/Rules/Customers_DeleteConfirmation.js"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Details"}}
 
 /***/ }),
 
@@ -1501,6 +1536,36 @@ module.exports = {"_Type":"Action.Type.ODataService.UpdateEntity","ActionResult"
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"Customers_CreateEntity"},"OnFailure":"/My_App/Actions/CreateCustomerEntityFailureMessage.action","OnSuccess":"/My_App/Actions/CloseModalPage_Complete.action","Target":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers"},"Properties":{"DateOfBirth":"#Control:FCCDOB/#Value","EmailAddress":"#Control:FCCEmail/#Value","FirstName":"#Control:FCCFirstName/#Value","LastName":"#Control:FCCLastName/#Value","PhoneNumber":"#Control:FCCPhone/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Actions/Customers_DeleteConfirmation.action":
+/*!******************************************************************************!*\
+  !*** ./build.definitions/My_App/Actions/Customers_DeleteConfirmation.action ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"Customers_DeleteConfirmation"},"Message":"Delete current entity?","Title":"Delete Confirmation","OKCaption":"OK","CancelCaption":"Cancel"}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Actions/Customers_DeleteEntity.action":
+/*!************************************************************************!*\
+  !*** ./build.definitions/My_App/Actions/Customers_DeleteEntity.action ***!
+  \************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.DeleteEntity","ActionResult":{"_Name":"Customers_DeleteEntity"},"OnFailure":"/My_App/Actions/DeleteCustomerEntityFailureMessage.action","OnSuccess":"/My_App/Actions/CloseModalPage_Complete.action","Target":{"Service":"/My_App/Services/com_sap_edm_sampleservice_v4.service","EntitySet":"Customers","ReadLink":"{@odata.readLink}"}}
+
+/***/ }),
+
+/***/ "./build.definitions/My_App/Actions/DeleteCustomerEntityFailureMessage.action":
+/*!************************************************************************************!*\
+  !*** ./build.definitions/My_App/Actions/DeleteCustomerEntityFailureMessage.action ***!
+  \************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"DeleteCustomerEntityFailureMessage"},"Message":"Delete Customer Failed - #ActionResults:Customers_DeleteEntity/error","Title":"Delete Customer","OKCaption":"OK"}
 
 /***/ }),
 
